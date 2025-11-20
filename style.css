@@ -89,11 +89,14 @@ body {
 
 .phone {
   width: min(360px, 85vw);
+  aspect-ratio: 9 / 19.5;        /* <- new: tall rectangle like a phone  */
   background: linear-gradient(145deg, #111827, #020308);
   border-radius: 2.4rem;
   padding: 0.35rem;
   box-shadow: var(--shadow-phone);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .phone-notch {
