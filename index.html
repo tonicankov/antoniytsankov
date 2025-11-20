@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Laolu Oguneye</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills & Awards</a></li>
+                <li><a href="#organizations">Organizations</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Laolu Oguneye</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#organizations" onclick="toggleMenu()">Organizations</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./Assets/FF-2028_Oguneye-Laolu_sp24-modified.png" alt="Laolu Oguneye Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Laolu Oguneye</h1>
+            <p class="section__text__p2">Freshman at Stanford University</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Assets/OOResume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Me
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./Assets/linkedin.png" alt="My Linkedin Profile"
+                class="icon" onClick="location.href='https://linkedin.com/in/olaoluwa-oguneye-24a7b9274/'">
+                <img src="./Assets/github.png" alt="My Github Profile"
+                class="icon" onClick="location.href='https://github.com/Laoluog/'">
+                <img src="./Assets/Untitled (8).png" alt="My TikTok Profile"
+                class="icon" onClick="location.href='https://www.tiktok.com/@laoluslogic/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./Assets/Untitled (9)-modified.png" alt="Profile Picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./Assets/experience.png" 
+                        alt="Experience Icon" 
+                        class="icon"/>
+                        <h3>Recent Experience</h3>
+                        <p>AMP Intern <br />Jane Street Capital</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./Assets/education.png" alt="Education Icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>B.S. Computer Science <br />Stanford University - June 2028</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>My name is Laolu Oguneye, and I am a rising freshman at Stanford University with an intended major of Computer Science. With individual projects and work done at Jane Street, I’ve explored discrete mathematics, software developments, financial markets, and the intersections between the three. Currently, I am looking to grow my skill set while pursuing a summer 2025 software internship. Within all I do, I seek to epitomize compassion and service. As co-founder of Beacon United, I spearhead the distribution of over 1000 meals to Atlanta's homeless. As co-founder and CEO of Hoop Legendz, a basketball camp that has generated over 200 registrations and over $20,000 in revenues, I ensure affordable access to basketball lessons for Atlanta’s youth. I am unwavering in my commitment to continue being a beacon of hope, love, and advocacy for the marginalized community of the World.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills & Awards</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>React - JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Data Analytics</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Node - JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Awards</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./Assets/trophy-computer-icons-clip-art-award-removebg-preview.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Coca Cola Scholar</h3>
+                                <p>The Coca-Cola Company</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/trophy-computer-icons-clip-art-award-removebg-preview.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Youth Leadership Award</h3>
+                                <p>Warner Bros. Discovery</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/trophy-computer-icons-clip-art-award-removebg-preview.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Martin Luther King Jr. Award</h3>
+                                <p>City Schools of Decatur</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/trophy-computer-icons-clip-art-award-removebg-preview.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>GA Youth Leadership Award</h3>
+                                <p>21st Century Leaders</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/trophy-computer-icons-clip-art-award-removebg-preview.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>GA Scholar</h3>
+                                <p>Georgia Department of Education</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/trophy-computer-icons-clip-art-award-removebg-preview.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>BAM Scholar</h3>
+                                <p>Microsoft</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#organizations'">
+    </section>
+    <section id="organizations">
+        <p class="section__text__p1">Take A Look At My</p>
+        <h1 class="title">Organizations</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/Screen Shot 2024-08-07 at 11.47.36 PM.png" alt="Hoop Legendz" class="orgs-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Hoop <br/> Legendz</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://www.hooplegendzbc.net/home/'">
+                            Website
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/Screen Shot 2024-08-07 at 11.48.41 PM.png" alt="Project 2" class="orgs-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Beacon <br/> United</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://www.linkedin.com/feed/update/urn:li:activity:7209600491570221056/'">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/Screen Shot 2024-08-07 at 11.49.07 PM.png" alt="Project 3" class="orgs-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Youth Poet Laureate Ambassador</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://www.youtube.com/watch?v=vdB43vl61Cw'">
+                            Performances
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="proj-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/business-green-graph-chart-of-stock-market-investment-trading-profit-and-loss-financial-chart-with-up-trend-line-graph-stock-future-trading-free-photo.jpg" alt="FinBot" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">FinBot</h2>
+                    <p>Implemented predictive models for market forecasting with Python
+
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/Laoluog/Algorithmic-Trading-Bot/'">
+                            Github
+                        </button>
+                        <!-- <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/Laoluog/Algorithmic-Trading-Bot/'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/NCCAAA.webp" alt="March Madness!" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">March Madness!</h2>
+                    <p> Interactive March Madness simulator with varying levels of difficulty</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/Laoluog/SPORTS'">
+                            Github
+                        </button>
+                        <!-- <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/Laoluog/Algorithmic-Trading-Bot/'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/camel-up-second-edition-artwork.webp" alt="Camel Up!" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Camel Up!</h2>
+                    <p>Graphic terminal 
+                        based Camel Up Game with AI
+                        leg and bet analysis
+
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/Laoluog/Camel-Up'">
+                            Github
+                        </button>
+                        <!-- <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/Laoluog/Algorithmic-Trading-Bot/'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+            <div class="proj-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/wordle_og_1200x630.png" alt="What's Wordle?" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">What's Wordle?</h2>
+                    <p>Wordle game with color/graphics and a Wordle bot that provies advice
+                        and has a ~95% success rate
+
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/Laoluog/Wordle/tree/main'">
+                            Github
+                        </button>
+                        <!-- <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/Laoluog/Algorithmic-Trading-Bot/'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/poker-pp-1680722359188.webp" alt="Hold or Fold?" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Hold or Fold?</h2>
+                    <p>Terminal based poker game created with AI algorithms that
+                        gauge bets and win percentages for each hand</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/Laoluog/Hold-or-Fold-/'">
+                            Github
+                        </button>
+                        <!-- <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/Laoluog/Algorithmic-Trading-Bot/'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/Scrambled-Game-Free-Play-Gameplay.png" alt="Anagame" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Anagame</h2>
+                    <p> Anagram Game with data analytics and various features that enable an enriching experience</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/Laoluog/Anagame'">
+                            Github
+                        </button>
+                        <!-- <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/Laoluog/Algorithmic-Trading-Bot/'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./Assets/email.png" alt="Email Icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:laoluog@stanford.edu">Laoluog@stanford.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./Assets/linkedin.png" alt="Linkedin Icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/olaoluwa-oguneye-24a7b9274/">Linkedin</a></p>
+            </div>
+        </div>   
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Skills & Awards</a></li>
+                    <li><a href="#organizations">Organizations</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul> 
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Laolu Oguneye. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Gonna have a section with like "orgs" or smth that has Beacon, HLBC, and Poetry -->
