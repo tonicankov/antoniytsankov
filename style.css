@@ -30,11 +30,12 @@ body {
   color: var(--text-main);
   min-height: 100vh;
   display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically   */
 }
 
 .page-shell {
   width: 100%;
-  min-height: 100vh;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -87,7 +88,8 @@ body {
 }
 
 .phone {
-  width: min(330px, 80vw);              /* a bit narrower so it doesn’t go off screen */
+  width: min(340px, 80vw);                 /* size */
+  aspect-ratio: 9 / 16;                    /* classic phone shape */
   background: linear-gradient(145deg, #111827, #020308);
   border-radius: 2.4rem;
   padding: 0.4rem;
@@ -133,7 +135,7 @@ body {
   gap: 0.7rem;
   position: relative;
   overflow: hidden;
-  flex: 1;   
+  flex: 1;                         /* this stretches the screen vertically */
 }
 
 .status-bar {
