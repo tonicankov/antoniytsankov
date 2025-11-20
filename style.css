@@ -1,0 +1,351 @@
+:root {
+  --bg: #050608;
+  --bg-soft: #0b0e15;
+  --bg-phone: #05060a;
+  --border-soft: #242634;
+  --accent: #3e6bff;
+  --accent-soft: #3e6bff33;
+  --text-main: #f5f5f5;
+  --text-muted: #b0b0b0;
+  --icon-bg: #1c1f29;
+  --icon-radius: 1.1rem;
+  --shadow-phone: 0 18px 45px rgba(0, 0, 0, 0.75);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: radial-gradient(circle at top left, #111827 0, #020308 55%);
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+}
+
+.page-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.8rem 1.4rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.name {
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  color: #d1d5db;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.left-text h1 {
+  font-size: 2.1rem;
+  margin: 0 0 1rem;
+}
+
+.left-text p {
+  margin: 0;
+  color: var(--text-muted);
+  max-width: 420px;
+  font-size: 0.95rem;
+}
+
+/* Phone */
+
+.phone-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.phone {
+  width: min(360px, 85vw);
+  background: linear-gradient(145deg, #111827, #020308);
+  border-radius: 2.4rem;
+  padding: 0.35rem;
+  box-shadow: var(--shadow-phone);
+  position: relative;
+}
+
+.phone-notch {
+  height: 30px;
+  margin: 0.35rem auto 0.6rem;
+  background: #020308;
+  border-radius: 999px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.camera {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, #60a5fa, #020617);
+}
+
+.speaker {
+  width: 40px;
+  height: 4px;
+  border-radius: 999px;
+  background: #1f2937;
+}
+
+.phone-screen {
+  background: radial-gradient(circle at top, #1f2937 0, #020617 55%);
+  border-radius: 1.9rem;
+  padding: 0.85rem 0.8rem 0.9rem;
+  border: 1px solid #111827;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  color: #e5e7eb;
+  opacity: 0.85;
+}
+
+.status-dots {
+  font-size: 0.65rem;
+}
+
+/* Lock screen */
+
+.lock-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 0.85rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #020617 0, #000000 55%);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lock-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lock-time {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.lock-sub {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Icons */
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.45rem 0.35rem;
+  margin-top: 0.2rem;
+}
+
+.app-icon,
+.dock-icon {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+  color: var(--text-main);
+}
+
+.icon-emoji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 0.25rem;
+  border-radius: var(--icon-radius);
+  background: var(--icon-bg);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(148, 163, 184, 0.12);
+  font-size: 1.4rem;
+  transition: transform 0.12s ease, box-shadow 0.12s ease,
+    background 0.12s ease;
+}
+
+.icon-label {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.app-icon:active .icon-emoji,
+.dock-icon:active .icon-emoji {
+  transform: scale(0.94);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.85);
+  background: #020617;
+}
+
+/* Dock */
+
+.dock {
+  margin-top: 0.7rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.85);
+  padding: 0.3rem 0.45rem;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgba(15, 23, 42, 0.9);
+}
+
+.dock-icon .icon-emoji {
+  width: 44px;
+  height: 44px;
+}
+
+/* Bottom */
+
+.phone-bottom {
+  height: 24px;
+}
+
+/* App overlay */
+
+.app-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 20;
+}
+
+.app-overlay.open {
+  display: flex;
+}
+
+.app-window {
+  max-width: 720px;
+  width: 100%;
+  max-height: 80vh;
+  background: var(--bg-soft);
+  border-radius: 1.4rem;
+  border: 1px solid var(--border-soft);
+  padding: 1.2rem 1.3rem 1.5rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.app-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.app-close {
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.app-content {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  overflow-y: auto;
+}
+
+.app-content a {
+  color: var(--accent);
+}
+
+/* Footer */
+
+.footer {
+  margin-top: auto;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .main-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.3rem;
+  }
+
+  .left-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .left-text p {
+    max-width: none;
+  }
+
+  .page-shell {
+    padding-top: 1.4rem;
+  }
+
+  .top-header {
+    gap: 0.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
