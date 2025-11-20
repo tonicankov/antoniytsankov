@@ -80,6 +80,13 @@ const apps = {
       <p><a href="https://github.com/tonicankov" target="_blank" rel="noreferrer">github.com/tonicankov</a></p>
     `
   },
+  email: {
+  title: "Email",
+  html: `
+    <p>Best way to reach me:</p>
+    <p><a href="mailto:your@email.com">your@email.com</a></p>
+  `
+},
   linkedin: {
     title: "LinkedIn",
     html: `
