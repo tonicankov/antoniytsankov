@@ -122,7 +122,8 @@ overlay.addEventListener("click", e => {
 });
 
 // Unlock by tapping anywhere on the screen
-phoneScreen.addEventListener("click", () => {
+// Unlock by tapping the lock overlay
+lockOverlay.addEventListener("click", () => {
   if (lockOverlay.classList.contains("active")) {
     lockOverlay.classList.remove("active");
   }
