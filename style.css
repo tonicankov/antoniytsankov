@@ -264,9 +264,15 @@ body {
   border-radius: 0;           /* no inner rounded corners */
   box-shadow: none;           /* kill the grey “card” shadow */
 
-  padding: 0.6rem 0;          /* small vertical spacing, no extra side gap */
+  /* only small vertical padding; horizontal will be handled by .contacts-inner */
+  padding: 0.6rem 0 0;
   max-height: none;
   overflow: visible;          /* let .app-content handle scrolling */
+}
+
+.contacts-inner {
+  /* this is what pulls the text away from the edges */
+  padding: 0 1.2rem 2.4rem;
 }
 
 .contacts-header {
@@ -333,12 +339,237 @@ body {
 .contacts-row a.contacts-row-value {
   color: #2563eb;
   text-decoration: none;
+  font-size: 0.85rem;   /* slightly smaller so it fits comfortably */
+  white-space: nowrap;  /* prevent breaking onto a new line */
 }
 
 .contacts-row a.contacts-row-value:hover {
   text-decoration: underline;
 }
+/*new*/
+.contacts-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.18rem 0.6rem;
+  border-radius: 999px;
+  background: #e5e7eb;
+  color: #111827;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+}
 
+.contacts-link-pill:hover {
+  background: #d1d5db;
+  text-decoration: none;
+}
+
+.contacts-link-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+/* === Gallery app === */
+
+.gallery-page {
+  padding: 0 1.0rem 2.4rem;
+  color: #111827;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.gallery-title {
+  margin: 0 0 0.15rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.gallery-subtitle {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #6b7280;
+}
+
+/* Featured image card */
+
+.gallery-feature {
+  margin-bottom: 1.1rem;
+}
+
+.gallery-feature-image-wrapper {
+  position: relative;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.45);
+}
+
+.gallery-feature-image-wrapper img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-feature-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0.6rem 0.75rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.05)
+  );
+  box-sizing: border-box;
+}
+
+.gallery-feature-label {
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.gallery-feature-button {
+  padding: 0.25rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.9);
+  color: #f9fafb;
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Grid of photos */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.gallery-grid-item {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.4);
+  background: #000;
+}
+
+.gallery-grid-item img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+}
+
+/* === NOTES APP === */
+
+.notes-page {
+  padding: 0 1rem 2.5rem;
+  color: #111827;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+.notes-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.notes-section-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 0.6rem;
+  color: #6b7280;
+}
+
+.note-card {
+  background: #ffffff;
+  border-radius: 1.1rem;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  margin-bottom: 1.2rem;
+  border: 1px solid #f3f4f6;
+}
+
+.note-featured {
+  background: #fffceb;
+  border: 1px solid #f7eeb5;
+}
+
+.note-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #fff2a1;
+  color: #7c6a00;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.note-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.15rem 0 0.25rem;
+}
+
+.note-preview {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.7rem;
+}
+
+.note-date {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.note-open-button {
+  float: right;
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  background: #f3f3f3;
+  font-size: 0.8rem;
+  color: #111827;
+  text-decoration: none;
+  border: 1px solid #e5e7eb;
+}
+
+.note-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.note-row:last-child {
+  border-bottom: none;
+}
+
+.note-row-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.note-row-preview {
+  font-size: 0.78rem;
+  color: #6b7280;
+}
+
+.note-row-arrow {
+  font-size: 1rem;
+  color: #9ca3af;
+  margin-left: 0.5rem;
+}
 /* Dock */
 
 .dock {
