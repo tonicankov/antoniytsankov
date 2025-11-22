@@ -25,6 +25,19 @@
               <span class="time" id="status-time"></span>
               <span class="status-dots">●●●</span>
             </div>
+            <!-- App window overlay -->
+            <div class="app-overlay" id="app-overlay">
+              <div class="app-window">
+                <header class="app-header">
+                  <div class="app-title" id="app-title"></div>
+                </header>
+
+                <div class="app-content" id="app-content"></div>
+
+                <!-- iPhone-style home bar: click to go “home” -->
+                <button class="app-close home-indicator" id="app-close" aria-label="Go home"></button>
+              </div>
+            </div>
 
             <!-- Lock screen -->
             <div class="lock-overlay active" id="lock-overlay">
@@ -34,65 +47,91 @@
 
             <!-- Home screen icons -->
             <div class="icon-grid">
-              <button class="app-icon" data-app="about">
-                <span class="icon-emoji">👤</span>
-                <span class="icon-label">About</span>
+              <button class="app-icon" data-app="contacts">
+                <span class="icon-emoji">
+                  <img src="icons/contacts.png" alt="Contacts icon">
+                </span>
+                <span class="icon-label">Contacts</span>
               </button>
 
-              <button class="app-icon" data-app="code">
-                <span class="icon-emoji">💻</span>
-                <span class="icon-label">Code</span>
+              <button class="app-icon" data-app="gallery">
+                <span class="icon-emoji">
+                  <img src="icons/gallery.png" alt="Gallery icon">
+                </span>
+                <span class="icon-label">Gallery</span>
               </button>
 
-              <button class="app-icon" data-app="markets">
-                <span class="icon-emoji">📈</span>
-                <span class="icon-label">Markets</span>
+              <button class="app-icon" data-app="projects">
+                <span class="icon-emoji">
+                  <img src="icons/projects.png" alt="Projects icon">
+                </span>
+                <span class="icon-label">Projects</span>
               </button>
 
-              <button class="app-icon" data-app="photos">
-                <span class="icon-emoji">📷</span>
-                <span class="icon-label">Photos</span>
+              <button class="app-icon" data-app="notes">
+                <span class="icon-emoji">
+                  <img src="icons/notes.png" alt="Notes icon">
+                </span>
+                <span class="icon-label">Notes</span>
               </button>
 
-              <button class="app-icon" data-app="principles">
-                <span class="icon-emoji">📜</span>
-                <span class="icon-label">Principles</span>
+              <button class="app-icon" data-app="music">
+                <span class="icon-emoji">
+                  <img src="icons/music.png" alt="Music icon">
+                </span>
+                <span class="icon-label">Music</span>
               </button>
 
-              <button class="app-icon" data-app="now">
-                <span class="icon-emoji">🔥</span>
-                <span class="icon-label">Now</span>
+              <button class="app-icon" data-app="fitness">
+                <span class="icon-emoji">
+                  <img src="icons/fitness.jfif" alt="Fitness icon">
+                </span>
+                <span class="icon-label">Fitness</span>
               </button>
 
-              <button class="app-icon" data-app="links">
-                <span class="icon-emoji">🔗</span>
-                <span class="icon-label">Links</span>
+                 <button class="app-icon" data-app="books">
+                <span class="icon-emoji">
+                  <img src="icons/books.png" alt="Books icon">
+                </span>
+                <span class="icon-label">Books</span>
               </button>
 
-              <button class="app-icon" data-app="contact">
-                <span class="icon-emoji">✉️</span>
-                <span class="icon-label">Contact</span>
+              <button class="app-icon" data-app="finance">
+                <span class="icon-emoji">
+                  <img src="icons/fin.webp" alt="Finance icon">
+                </span>
+                <span class="icon-label">Finance</span>
+              </button>
+
+              <button class="app-icon" data-app="maps">
+                <span class="icon-emoji">
+                  <img src="icons/maps.jpg" alt="Maps icon">
+                </span>
+                <span class="icon-label">Maps</span>
               </button>
             </div>
 
             <div class="dock">
-              <button class="dock-icon" data-app="cv">
-                <span class="icon-emoji">📄</span>
-                <span class="icon-label">CV</span>
-              </button>
-              <button class="dock-icon" data-app="github">
-                <span class="icon-emoji">🐙</span>
-                <span class="icon-label">GitHub</span>
-              </button>
-              <button class="dock-icon" data-app="linkedin">
-                <span class="icon-emoji">💼</span>
-                <span class="icon-label">LinkedIn</span>
-              </button>
-              <button class="dock-icon" data-app="email">
-                <span class="icon-emoji">✉️</span>
-                <span class="icon-label">Email</span>
-              </button>
-            </div>
+              <a href="https://www.instagram.com/tonicankov/" target="_blank" class="dock-item">
+                  <img src="icons/instagram-icon.png" alt="Instagram">
+                  <span>Instagram</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/antoniy-tsankov-aba4b5240/" target="_blank" class="dock-item">
+                  <img src="icons/linkedin-icon.png" alt="LinkedIn">
+                  <span>LinkedIn</span>
+              </a>
+
+              <a href="https://github.com/tonicankov" target="_blank" class="dock-item">
+                  <img src="icons/github.png" alt="Github">
+                  <span>Github</span>
+              </a>
+
+              <a href="https://x.com/anthoniy1337" target="_blank" class="dock-item">
+                  <img src="icons/twitter-icon.png" alt="Twitter">
+                  <span>X</span>
+              </a>
+          </div>
 
           <div class="phone-bottom"></div>
         </div>
@@ -102,17 +141,7 @@
     
   </div>
 
-  <!-- App window overlay -->
-  <div class="app-overlay" id="app-overlay">
-    <div class="app-window">
-      <header class="app-header">
-        <div class="app-title" id="app-title"></div>
-        <button class="app-close" id="app-close">×</button>
-      </header>
-      <div class="app-content" id="app-content"></div>
-    </div>
-  </div>
-
+  
   <script src="script.js"></script>
 </body>
 </html>

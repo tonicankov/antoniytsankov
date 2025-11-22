@@ -1,99 +1,87 @@
-// Content for each "app"
+// Content for each in-phone "app" that should open inside the overlay
 const apps = {
-  about: {
-    title: "About",
+  contacts: {
+    title: "Contacts",
     html: `
-      <p>I’m Antoniy – a software developer and markets-obsessed student.
-      I care about building systems, understanding risk, and getting strong in both code and the gym.</p>
-    `
-  },
-  code: {
-    title: "Code & Projects",
-    html: `
-      <p>I mostly build in C#, .NET, Blazor, and use Python for data / quant work.</p>
-      <ul>
-        <li><strong>Project 1</strong> – short description, <a href="#">GitHub</a></li>
-        <li><strong>Project 2</strong> – short description, <a href="#">GitHub</a></li>
-      </ul>
-    `
-  },
-  markets: {
-    title: "Markets",
-    html: `
-      <p>Notes on trading, Polymarket, risk management, and experiments.
-      Over time this turns into a public log of theses, post-mortems, and edges I’m exploring.</p>
-    `
-  },
-  photos: {
-    title: "Photos",
-    html: `
-      <p>Street photography and portraits. Eventually this will be a proper gallery.</p>
-      <p><a href="#" target="_blank" rel="noreferrer">Instagram / photo gallery</a></p>
-    `
-  },
-  principles: {
-    title: "Principles",
-    html: `
-      <ul>
-        <li>Sleep is leverage, not a luxury.</li>
-        <li>No excuses – only choices and their consequences.</li>
-        <li>Build things that compound: skill, capital, reputation.</li>
-      </ul>
-    `
-  },
-  now: {
-    title: "Now",
-    html: `
-      <p>What I’m focused on right now: building real experience as a developer,
-      sharpening my edge in markets, and staying consistent with lifting and deep work.</p>
-    `
-  },
-  links: {
-    title: "Links",
-    html: `
-      <ul>
-        <li><a href="https://github.com/tonicankov" target="_blank" rel="noreferrer">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/..." target="_blank" rel="noreferrer">LinkedIn</a></li>
-        <li><a href="#" target="_blank" rel="noreferrer">CV (PDF)</a></li>
-      </ul>
-    `
-  },
-  contact: {
-    title: "Contact",
-    html: `
-      <p>Best way to reach me:</p>
-      <ul>
-        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
-      </ul>
-    `
-  },
-  cv: {
-    title: "CV",
-    html: `
-      <p>Link to your resume here:</p>
-      <p><a href="#" target="_blank" rel="noreferrer">Open CV (PDF)</a></p>
-    `
-  },
-  github: {
-    title: "GitHub",
-    html: `
-      <p><a href="https://github.com/tonicankov" target="_blank" rel="noreferrer">github.com/tonicankov</a></p>
-    `
-  },
-  email: {
-  title: "Email",
-  html: `
-    <p>Best way to reach me:</p>
-    <p><a href="mailto:your@email.com">your@email.com</a></p>
-  `
-},
-  linkedin: {
-    title: "LinkedIn",
-    html: `
-      <p><a href="https://www.linkedin.com/in/..." target="_blank" rel="noreferrer">Your LinkedIn</a></p>
+      <div class="contacts-page">
+        <header class="contacts-header">
+          <img src="icons/1741991268843.jfif" alt="Antoniy Tsankov" class="contacts-photo" />
+          <h2 class="contacts-name">Antoniy Tsankov</h2>
+          <p class="contacts-subtitle"></p>
+        </header>
+
+        <section class="contacts-section">
+          <h3 class="contacts-section-title">Personal Info</h3>
+
+          <div class="contacts-row">
+            <span class="contacts-row-label">Email</span>
+            <a href="mailto:tonicankov@gmail.com" class="contacts-row-value">
+              tonicankov@gmail.com
+            </a>
+          </div>
+
+          <div class="contacts-row">
+            <span class="contacts-row-label">Location</span>
+            <span class="contacts-row-value">Eindhoven</span>
+          </div>
+
+          <div class="contacts-row">
+            <span class="contacts-row-label">Birthday</span>
+            <span class="contacts-row-value">17 May</span>
+          </div>
+        </section>
+
+        <section class="contacts-section">
+          <h3 class="contacts-section-title">Education</h3>
+
+          <div class="contacts-row">
+            <span class="contacts-row-label">University</span>
+            <span class="contacts-row-value">
+              Eindhoven University of Technology
+            </span>
+          </div>
+
+          <div class="contacts-row">
+            <span class="contacts-row-label">Major</span>
+            <span class="contacts-row-value">
+              Computer Science &amp; Engineering
+            </span>
+          </div>
+        </section>
+
+        <section class="contacts-section">
+          <h3 class="contacts-section-title">Links</h3>
+
+          <div class="contacts-row">
+            <span class="contacts-row-label">Instagram</span>
+            <a href="https://www.instagram.com/tonicankov/" target="_blank" class="contacts-row-value">
+              instagram.com/tonicankov
+            </a>
+          </div>
+
+          <div class="contacts-row">
+            <span class="contacts-row-label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/antoniy-tsankov-aba4b5240/" target="_blank" class="contacts-row-value">
+              linkedin.com/in/antoniy-tsankov-aba4b5240
+            </a>
+          </div>
+
+          <div class="contacts-row">
+            <span class="contacts-row-label">GitHub</span>
+            <a href="https://github.com/tonicankov" target="_blank" class="contacts-row-value">
+              github.com/tonicankov
+            </a>
+          </div>
+        </section>
+      </div>
     `
   }
+
+  // later you can add:
+  // gallery: { title: "Gallery", html: `...` },
+  // projects: { ... } etc.
 };
+
 
 const overlay = document.getElementById("app-overlay");
 const appTitle = document.getElementById("app-title");
