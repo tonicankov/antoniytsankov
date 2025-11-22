@@ -206,7 +206,553 @@ const apps = {
 
     </div>
   `
-}
+},music: {
+    title: "Music",
+    html: `
+      <div class="music-page">
+        <header class="music-header">
+          <div>
+            <h2 class="music-title">Antoniy's Music</h2>
+            <p class="music-subtitle">Current rotation and recent plays.</p>
+          </div>
+          <div class="music-profile">
+            <img src="icons/profilepic.jfif" alt="Antoniy" />
+          </div>
+        </header>
+
+        <section class="music-nowplaying-card">
+          <div class="music-nowplaying-header">Now Playing</div>
+          <div class="music-nowplaying-main">
+            <div class="music-album-art">
+              <!-- point this to any cover image you like -->
+              <img src="music/kendrick.jpg" alt="Now playing cover" />
+            </div>
+            <div class="music-track-text">
+              <div class="music-track-title">Sing About Me, I’m Dying of Thirst</div>
+              <div class="music-track-artist">Kendrick Lamar</div>
+            </div>
+            <button class="music-play-button" type="button">
+              <span class="music-play-button-icon">▶</span>
+            </button>
+          </div>
+          <div class="music-progress">
+            <div class="music-progress-bar"></div>
+          </div>
+        </section>
+
+        <section class="music-recent-card">
+          <div class="music-recent-header">
+            <div class="music-recent-title">Recent Plays</div>
+            <div class="music-recent-meta">5 songs</div>
+          </div>
+
+          <div class="music-recent-list">
+            <div class="music-song-row">
+              <div class="music-song-main">
+                <div class="music-song-cover">
+                  <img src="music/tears.jfif" alt="Song cover" />
+                </div>
+                <div>
+                  <div class="music-song-title">Everybody Wants to Rule the World</div>
+                  <div class="music-song-artist">Tears for Fears</div>
+                </div>
+              </div>
+              <div class="music-song-arrow">›</div>
+            </div>
+
+            <div class="music-song-row">
+              <div class="music-song-main">
+                <div class="music-song-cover">
+                  <img src="music/50.jfif" alt="Song cover" />
+                </div>
+                <div>
+                  <div class="music-song-title">Life's on The Line</div>
+                  <div class="music-song-artist">50 Cent</div>
+                </div>
+              </div>
+              <div class="music-song-arrow">›</div>
+            </div>
+
+            <div class="music-song-row">
+              <div class="music-song-main">
+                <div class="music-song-cover">
+                  <img src="music/umb.jfif" alt="Song cover" />
+                </div>
+                <div>
+                  <div class="music-song-title">Umbrella</div>
+                  <div class="music-song-artist">Rihanna</div>
+                </div>
+              </div>
+              <div class="music-song-arrow">›</div>
+            </div>
+
+            <div class="music-song-row">
+              <div class="music-song-main">
+                <div class="music-song-cover">
+                  <img src="music/medi.jpg" alt="Song cover" />
+                </div>
+                <div>
+                  <div class="music-song-title">Nadezhda</div>
+                  <div class="music-song-artist">Medi</div>
+                </div>
+              </div>
+              <div class="music-song-arrow">›</div>
+            </div>
+
+            <div class="music-song-row">
+              <div class="music-song-main">
+                <div class="music-song-cover">
+                  <img src="music/journey.jfif" alt="Song cover" />
+                </div>
+                <div>
+                  <div class="music-song-title">Don't Stop Believin'</div>
+                  <div class="music-song-artist">Journey</div>
+                </div>
+              </div>
+              <div class="music-song-arrow">›</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    `
+  },
+
+  fitness: {
+    title: "Gym",
+    html: `
+      <div class="fitness-page">
+        <header class="fitness-header">
+          <h2 class="fitness-title">Training &amp; Gym</h2>
+          <p class="fitness-subtitle">
+            The sports I train and the lifts I care about.
+          </p>
+        </header>
+
+        <section class="fitness-section">
+          <h3 class="fitness-section-title">Sports I Train</h3>
+
+          <div class="fitness-card">
+            <div class="fitness-sport-name">Boxing</div>
+            <div class="fitness-sport-label">Combat sport · Conditioning</div>
+            <p class="fitness-sport-desc">
+              Multiple sessions per week focused on timing, footwork and conditioning.
+              It keeps my cardio honest and forces real sharpness under fatigue.
+            </p>
+            <div class="fitness-tags">
+              <span class="fitness-tag">Pad work</span>
+              <span class="fitness-tag">Sparring</span>
+              <span class="fitness-tag">Footwork</span>
+            </div>
+          </div>
+
+          <div class="fitness-card">
+            <div class="fitness-sport-name">Strength Training</div>
+            <div class="fitness-sport-label">Gym · Compound lifts</div>
+            <p class="fitness-sport-desc">
+              Base is heavy compounds: bench, squats, rows, weighted pull-ups and shoulder work.
+              Goal is dense, athletic strength that transfers to everything else.
+            </p>
+            <div class="fitness-tags">
+              <span class="fitness-tag">Bench</span>
+              <span class="fitness-tag">Squats</span>
+              <span class="fitness-tag">Pull-ups</span>
+            </div>
+          </div>
+
+          <div class="fitness-card">
+            <div class="fitness-sport-name">Conditioning</div>
+            <div class="fitness-sport-label">Engine work</div>
+            <p class="fitness-sport-desc">
+              Intervals, bag rounds and roadwork to keep the engine high enough
+              for hard rounds and long days without fading.
+            </p>
+            <div class="fitness-tags">
+              <span class="fitness-tag">Intervals</span>
+              <span class="fitness-tag">Roadwork</span>
+              <span class="fitness-tag">Jump rope</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="fitness-section">
+          <h3 class="fitness-section-title">Key PRs (fill in later)</h3>
+          <div class="fitness-card">
+            <ul class="fitness-pr-list">
+              <li class="fitness-pr-item">
+                <span class="fitness-pr-lift">Bench Press</span>
+                <span class="fitness-pr-value">— kg</span>
+              </li>
+              <li class="fitness-pr-item">
+                <span class="fitness-pr-lift">Squat</span>
+                <span class="fitness-pr-value">— kg</span>
+              </li>
+              <li class="fitness-pr-item">
+                <span class="fitness-pr-lift">Deadlift</span>
+                <span class="fitness-pr-value">— kg</span>
+              </li>
+              <li class="fitness-pr-item">
+                <span class="fitness-pr-lift">Weighted Pull-ups</span>
+                <span class="fitness-pr-value">BW + — kg</span>
+              </li>
+              <li class="fitness-pr-item">
+                <span class="fitness-pr-lift">Best 1 km run</span>
+                <span class="fitness-pr-value">— : —</span>
+              </li>
+            </ul>
+            <p class="fitness-pr-note">
+              Replace the dashes with your real numbers when you want it locked in.
+            </p>
+          </div>
+        </section>
+      </div>
+    `
+  },
+   books: {
+  title: "Books",
+  html: `
+    <div class="books-page">
+      <header class="books-header">
+        <h2 class="books-title">Library</h2>
+        <p class="books-subtitle">Books, movies and series I’ve actually finished.</p>
+      </header>
+
+      <section class="books-section">
+        <h3 class="books-section-title">Books</h3>
+        <div class="books-card">
+
+          <div class="media-row" onclick="openMediaItem(0)">
+            <div class="media-main">
+              <div class="media-cover">BK</div>
+              <div>
+                <div class="media-text-title">Principles</div>
+                <div class="media-text-meta">Ray Dalio</div>
+                <div class="media-text-rating">★★★★★ · Must read</div>
+              </div>
+            </div>
+            <div class="media-arrow">›</div>
+          </div>
+
+          <div class="media-row" onclick="openMediaItem(1)">
+            <div class="media-main">
+              <div class="media-cover">BK</div>
+              <div>
+                <div class="media-text-title">The Almanack of Naval Ravikant</div>
+                <div class="media-text-meta"> Eric Jorgenson</div>
+                <div class="media-text-rating">★★★★☆ · Simple but worth the read</div>
+              </div>
+            </div>
+            <div class="media-arrow">›</div>
+          </div>
+
+          <div class="media-row" onclick="openMediaItem(2)">
+            <div class="media-main">
+              <div class="media-cover">BK</div>
+              <div>
+                <div class="media-text-title">The Ancient City</div>
+                <div class="media-text-meta">Fustel de Coulanges</div>
+                <div class="media-text-rating">★★★★★ · Anthropology</div>
+              </div>
+            </div>
+            <div class="media-arrow">›</div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="books-section">
+        <h3 class="books-section-title">TV / Series</h3>
+        <div class="books-card">
+
+          <div class="media-row" onclick="openMediaItem(1000)">
+            <div class="media-main">
+              <div class="media-cover">TV</div>
+              <div>
+                <div class="media-text-title">Sopranos</div>
+                <div class="media-text-meta">All seasons</div>
+                <div class="media-text-rating"> 10/10 · Best Tv show of all-time</div>
+              </div>
+            </div>
+            <div class="media-arrow">›</div>
+          </div>
+
+          <div class="media-row" onclick="openMediaItem(1001)">
+            <div class="media-main">
+              <div class="media-cover">TV</div>
+              <div>
+                <div class="media-text-title">The Wire</div>
+                <div class="media-text-meta">All seasons</div>
+                <div class="media-text-rating"> 10/10 · Everybody able to vote should watch</div>
+              </div>
+            </div>
+            <div class="media-arrow">›</div>
+          </div>
+
+          <div class="media-row" onclick="openMediaItem(1001)">
+            <div class="media-main">
+              <div class="media-cover">TV</div>
+              <div>
+                <div class="media-text-title">True Detective</div>
+                <div class="media-text-meta">Season 1</div>
+                <div class="media-text-rating"> 10/10 · Best TV season of all-time</div>
+              </div>
+            </div>
+            <div class="media-arrow">›</div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="books-section">
+  <h3 class="books-section-title">Movies</h3>
+  <div class="books-card">
+
+    <div class="media-row" onclick="openMediaItem(100)">
+      <div class="media-main">
+        <div class="media-cover">MV</div>
+        <div>
+          <div class="media-text-title">Enemy</div>
+          <div class="media-text-meta">Movie</div>
+          <div class="media-text-rating">9/10</div>
+        </div>
+      </div>
+      <div class="media-arrow">›</div>
+    </div>
+
+    <div class="media-row" onclick="openMediaItem(101)">
+      <div class="media-main">
+        <div class="media-cover">MV</div>
+        <div>
+          <div class="media-text-title">Nocturnal Animals</div>
+          <div class="media-text-meta">Movie</div>
+          <div class="media-text-rating">9/10</div>
+        </div>
+      </div>
+      <div class="media-arrow">›</div>
+    </div>
+
+    <div class="media-row" onclick="openMediaItem(102)">
+      <div class="media-main">
+        <div class="media-cover">MV</div>
+        <div>
+          <div class="media-text-title">The Grey</div>
+          <div class="media-text-meta">Movie</div>
+          <div class="media-text-rating">9/10</div>
+        </div>
+      </div>
+      <div class="media-arrow">›</div>
+    </div>
+
+    <div class="media-row" onclick="openMediaItem(103)">
+      <div class="media-main">
+        <div class="media-cover">MV</div>
+        <div>
+          <div class="media-text-title">
+            The Assassination of Jesse James by the Coward Robert Ford
+          </div>
+          <div class="media-text-meta">Movie</div>
+          <div class="media-text-rating">8/10</div>
+        </div>
+      </div>
+      <div class="media-arrow">›</div>
+    </div>
+
+    <div class="media-row" onclick="openMediaItem(104)">
+      <div class="media-main">
+        <div class="media-cover">MV</div>
+        <div>
+          <div class="media-text-title">Ghost Dog</div>
+          <div class="media-text-meta">Movie</div>
+          <div class="media-text-rating">8.5/10</div>
+        </div>
+      </div>
+      <div class="media-arrow">›</div>
+    </div>
+
+    <div class="media-row" onclick="openMediaItem(105)">
+      <div class="media-main">
+        <div class="media-cover">MV</div>
+        <div>
+          <div class="media-text-title">The Counselor</div>
+          <div class="media-text-meta">Movie</div>
+          <div class="media-text-rating">7/10</div>
+        </div>
+      </div>
+      <div class="media-arrow">›</div>
+    </div>
+
+    <div class="media-row" onclick="openMediaItem(106)">
+      <div class="media-main">
+        <div class="media-cover">MV</div>
+        <div>
+          <div class="media-text-title">Michael Clayton</div>
+          <div class="media-text-meta">Movie</div>
+          <div class="media-text-rating">5/10</div>
+        </div>
+      </div>
+      <div class="media-arrow">›</div>
+    </div>
+
+    <div class="media-row" onclick="openMediaItem(107)">
+      <div class="media-main">
+        <div class="media-cover">MV</div>
+        <div>
+          <div class="media-text-title">Synecdoche, New York</div>
+          <div class="media-text-meta">Movie</div>
+          <div class="media-text-rating">9/10</div>
+        </div>
+      </div>
+      <div class="media-arrow">›</div>
+    </div>
+
+    <div class="media-row" onclick="openMediaItem(108)">
+      <div class="media-main">
+        <div class="media-cover">MV</div>
+        <div>
+          <div class="media-text-title">Fresh</div>
+          <div class="media-text-meta">Movie</div>
+          <div class="media-text-rating">7.5/10</div>
+        </div>
+      </div>
+      <div class="media-arrow">›</div>
+    </div>
+
+   
+    <div class="media-row" onclick="openMediaItem(109)">
+      <div class="media-main">
+        <div class="media-cover">MV</div>
+        <div>
+          <div class="media-text-title">There Will Be Blood</div>
+          <div class="media-text-meta">Movie</div>
+          <div class="media-text-rating">8/10</div>
+        </div>
+      </div>
+      <div class="media-arrow">›</div>
+    </div>
+    <div class="media-row" onclick="openMediaItem(110)">
+      <div class="media-main">
+        <div class="media-cover">MV</div>
+        <div>
+          <div class="media-text-title">Heat</div>
+          <div class="media-text-meta">Movie</div>
+          <div class="media-text-rating">7.5/10</div>
+        </div>
+      </div>
+      <div class="media-arrow">›</div>
+    </div>
+  </div>
+</section>
+
+
+      
+    </div>
+  `
+},
+    maps: {
+    title: "Maps",
+    html: `
+      <div class="maps-page">
+        <header class="maps-header">
+          <h2 class="maps-title">Places I’ve Been</h2>
+          <p class="maps-subtitle">
+            Starting point in Varna, then bouncing around Europe.
+          </p>
+        </header>
+
+        <section class="maps-card">
+          <div class="maps-map-wrapper">
+            <!-- world map background -->
+            <img src="icons/map.jpg" alt="World map" />
+
+            <!-- Pins (positions are rough but fine visually) -->
+            <div class="maps-pin maps-pin-home">
+              <div class="maps-pin-dot"></div>
+              <div class="maps-pin-label">Varna</div>
+            </div>
+
+            <div class="maps-pin maps-pin-barcelona">
+              <div class="maps-pin-dot"></div>
+              <div class="maps-pin-label">Barcelona</div>
+            </div>
+
+            <div class="maps-pin maps-pin-amsterdam">
+              <div class="maps-pin-dot"></div>
+              <div class="maps-pin-label">Amsterdam</div>
+            </div>
+
+            <div class="maps-pin maps-pin-eindhoven">
+              <div class="maps-pin-dot"></div>
+              <div class="maps-pin-label">Eindhoven</div>
+            </div>
+
+            <div class="maps-pin maps-pin-rotterdam">
+              <div class="maps-pin-dot"></div>
+              <div class="maps-pin-label">Rotterdam</div>
+            </div>
+
+            <div class="maps-pin maps-pin-hague">
+              <div class="maps-pin-dot"></div>
+              <div class="maps-pin-label">The Hague</div>
+            </div>
+
+            <div class="maps-pin maps-pin-paris">
+              <div class="maps-pin-dot"></div>
+              <div class="maps-pin-label">Paris</div>
+            </div>
+
+            <div class="maps-pin maps-pin-vienna">
+              <div class="maps-pin-dot"></div>
+              <div class="maps-pin-label">Vienna</div>
+            </div>
+
+            <div class="maps-pin maps-pin-bologna">
+              <div class="maps-pin-dot"></div>
+              <div class="maps-pin-label">Bologna</div>
+            </div>
+
+            <div class="maps-pin maps-pin-torino">
+              <div class="maps-pin-dot"></div>
+              <div class="maps-pin-label">Torino</div>
+            </div>
+
+            <div class="maps-pin maps-pin-milano">
+              <div class="maps-pin-dot"></div>
+              <div class="maps-pin-label">Milano</div>
+            </div>
+
+            <div class="maps-pin maps-pin-salerno">
+              <div class="maps-pin-dot"></div>
+              <div class="maps-pin-label">Salerno</div>
+            </div>
+
+            <div class="maps-pin maps-pin-napoli">
+              <div class="maps-pin-dot"></div>
+              <div class="maps-pin-label">Napoli</div>
+            </div>
+          </div>
+
+          <div class="maps-list">
+            <div class="maps-list-title">Logged so far</div>
+            <ul>
+              <li><strong>Home:</strong> Varna</li>
+              <li>Barcelona</li>
+              <li>Amsterdam</li>
+              <li>Eindhoven</li>
+              <li>Rotterdam</li>
+              <li>The Hague</li>
+              <li>Paris</li>
+              <li>Vienna</li>
+              <li>Bologna</li>
+              <li>Torino</li>
+              <li>Milano</li>
+              <li>Salerno</li>
+              <li>Napoli</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    `
+  }
+
   // projects: { ... } etc.
 };
 
@@ -265,9 +811,6 @@ function updateTime() {
 updateTime();
 setInterval(updateTime, 60 * 1000);
 
-// Footer year
-document.getElementById("year").textContent = new Date().getFullYear();
-
 // Simple note data
 const notesData = [
   {
@@ -289,17 +832,115 @@ const notesData = [
   }
 ];
 
+const mediaData = [
+  {
+    id: 0,
+    type: "Book",
+    title: "Example Book Title",
+    year: "2024",
+    rating: "★★★★★",
+    description: `
+      <p>This is where your real book commentary goes.</p>
+      <p>Talk about themes, what you liked, what surprised you, etc.</p>
+    `
+  },
+  {
+    id: 1,
+    type: "Book",
+    title: "Another Book",
+    year: "2023",
+    rating: "★★★★☆",
+    description: `
+      <p>Your real review goes here.</p>
+    `
+  },
+  {
+    id: 2,
+    type: "Movie",
+    title: "Example Movie",
+    year: "2022",
+    rating: "★★★★☆",
+    description: `
+      <p>Short thought about the movie.</p>
+    `
+  }
+];
+
 // Opens a note
 function openNote(index) {
   const note = notesData[index];
+  if (!note) return;
 
-  document.getElementById("app-content").innerHTML = `
+  const appContent = document.getElementById("app-content");
+  const appTitle = document.getElementById("app-title");
+  if (!appContent || !appTitle) return;
+
+  // Change the header title to the note title (optional)
+  appTitle.textContent = "Notes";
+
+  appContent.innerHTML = `
     <div class="notes-page">
-      <h2 style="text-align:center; margin-bottom:1rem;">${note.title}</h2>
+      <a href="javascript:void(0)" class="note-detail-back" onclick="goBackFromNote()">
+        <span class="note-detail-back-icon">‹</span>
+        <span>Back</span>
+      </a>
+
+      <h2 class="note-detail-title">${note.title}</h2>
       <p class="note-date">${note.date}</p>
-      <div style="margin-top:1rem; line-height:1.5;">${note.content}</div>
-      <br/><br/>
-      <a href="#" class="note-open-button" onclick="loadApp('notes')">Back</a>
+
+      <div style="margin-top: 0.75rem; line-height: 1.5;">
+        ${note.content}
+      </div>
     </div>
   `;
+}
+
+function openMediaItem(id) {
+  const item = mediaData.find(x => x.id === id);
+  if (!item) return;
+
+  const appContent = document.getElementById("app-content");
+  const appTitle = document.getElementById("app-title");
+
+  appTitle.textContent = item.type;
+
+  appContent.innerHTML = `
+    <div class="notes-page">
+
+      <a href="javascript:void(0)" class="note-detail-back" onclick="goBackFromMedia()">
+        <span class="note-detail-back-icon">‹</span>
+        <span>Back</span>
+      </a>
+
+      <h2 class="note-detail-title">${item.title}</h2>
+      <p class="note-date">${item.type} · ${item.year}</p>
+
+      <p style="color:#f97316; margin-top:0.5rem;">
+        ${item.rating}
+      </p>
+
+      <div style="margin-top:1rem; line-height:1.55;">
+        ${item.description}
+      </div>
+
+    </div>
+  `;
+}
+
+function goBackFromNote() {
+  const app = apps.notes;
+  const appContent = document.getElementById("app-content");
+  const appTitle = document.getElementById("app-title");
+  if (!app || !appContent || !appTitle) return;
+
+  appTitle.textContent = app.title;
+  appContent.innerHTML = app.html;
+}
+
+function goBackFromMedia() {
+  const appContent = document.getElementById("app-content");
+  const appTitle = document.getElementById("app-title");
+
+  appTitle.textContent = apps.books.title;
+  appContent.innerHTML = apps.books.html;
 }

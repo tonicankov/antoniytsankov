@@ -570,6 +570,553 @@ body {
   color: #9ca3af;
   margin-left: 0.5rem;
 }
+
+/* Note detail view back link */
+
+.note-detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-decoration: none;
+  margin-bottom: 0.9rem;
+}
+
+.note-detail-back-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.note-detail-back:hover {
+  text-decoration: underline;
+}
+
+.note-detail-title {
+  margin: 0 0 0.15rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+/* === MUSIC APP === */
+
+.music-page {
+  padding: 0 1rem 2.4rem;
+  color: #111827;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+.music-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.music-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #f97373, #ec4899);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.music-subtitle {
+  font-size: 0.82rem;
+  color: #6b7280;
+}
+
+.music-profile {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 2px solid #f9fafb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.music-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Now playing card */
+
+.music-nowplaying-card {
+  border-radius: 1.3rem;
+  padding: 1rem;
+  background: radial-gradient(circle at top left, #f9a8d4, #fef3c7);
+  box-shadow: 0 10px 25px rgba(236, 72, 153, 0.35);
+  margin-bottom: 1.2rem;
+}
+
+.music-nowplaying-header {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #6b21a8;
+  margin-bottom: 0.4rem;
+}
+
+.music-nowplaying-main {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.music-album-art {
+  width: 64px;
+  height: 64px;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  background: #111827;
+}
+
+.music-album-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.music-track-text {
+  flex: 1;
+}
+
+.music-track-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 0.1rem;
+}
+
+.music-track-artist {
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.music-play-button {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  border: none;
+  cursor: default;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.music-play-button-icon {
+  font-size: 1rem;
+}
+
+.music-progress {
+  margin-top: 0.7rem;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(249, 250, 251, 0.6);
+  overflow: hidden;
+}
+
+.music-progress-bar {
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(90deg, #ec4899, #f97316);
+}
+
+/* Recent plays card */
+
+.music-recent-card {
+  border-radius: 1.1rem;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.18);
+  border: 1px solid #f3f4f6;
+  padding: 0.85rem 0.9rem;
+}
+
+.music-recent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.music-recent-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.music-recent-meta {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.music-recent-list {
+  margin-top: 0.2rem;
+}
+
+.music-song-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.music-song-row:last-child {
+  border-bottom: none;
+}
+
+.music-song-main {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.music-song-cover {
+  width: 38px;
+  height: 38px;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  background: #111827;
+}
+
+.music-song-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.music-song-title {
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
+.music-song-artist {
+  font-size: 0.76rem;
+  color: #6b7280;
+}
+
+.music-song-arrow {
+  font-size: 1rem;
+  color: #d1d5db;
+}
+
+/* === FITNESS / GYM APP === */
+
+.fitness-page {
+  padding: 0 1rem 2.4rem;
+  color: #111827;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+.fitness-header {
+  margin-bottom: 1.1rem;
+}
+
+.fitness-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.fitness-subtitle {
+  font-size: 0.82rem;
+  color: #6b7280;
+  margin-top: 0.15rem;
+}
+
+.fitness-section {
+  margin-bottom: 1rem;
+}
+
+.fitness-section-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 0.4rem;
+}
+
+.fitness-card {
+  background: #ffffff;
+  border-radius: 1.1rem;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.16);
+  border: 1px solid #f3f4f6;
+  margin-bottom: 0.6rem;
+}
+
+.fitness-sport-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.fitness-sport-label {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-bottom: 0.3rem;
+}
+
+.fitness-sport-desc {
+  font-size: 0.8rem;
+  color: #4b5563;
+  line-height: 1.45;
+}
+
+.fitness-tags {
+  margin-top: 0.45rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.fitness-tag {
+  font-size: 0.72rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.fitness-pr-list {
+  list-style: none;
+  margin: 0.3rem 0 0;
+  padding: 0;
+}
+
+.fitness-pr-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.82rem;
+}
+
+.fitness-pr-item:last-child {
+  border-bottom: none;
+}
+
+.fitness-pr-lift {
+  color: #4b5563;
+}
+
+.fitness-pr-value {
+  font-weight: 600;
+}
+
+.fitness-pr-note {
+  margin-top: 0.45rem;
+  font-size: 0.72rem;
+  color: #9ca3af;
+}
+
+/* === BOOKS / MEDIA APP === */
+
+.books-page {
+  padding: 0 1rem 2.4rem;
+  color: #111827;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+.books-header {
+  margin-bottom: 1rem;
+}
+
+.books-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #6366f1, #ec4899);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.books-subtitle {
+  font-size: 0.82rem;
+  color: #6b7280;
+  margin-top: 0.15rem;
+}
+
+.books-section {
+  margin-bottom: 1rem;
+}
+
+.books-section-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 0.4rem;
+}
+
+.books-card {
+  background: #ffffff;
+  border-radius: 1.1rem;
+  padding: 0.8rem 0.9rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.16);
+  border: 1px solid #f3f4f6;
+}
+
+.media-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.media-row:last-child {
+  border-bottom: none;
+}
+
+.media-main {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.media-cover {
+  width: 38px;
+  height: 38px;
+  border-radius: 0.7rem;
+  background: linear-gradient(135deg, #e5e7eb, #d1d5db);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.media-text-title {
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.media-text-meta {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.media-text-rating {
+  font-size: 0.75rem;
+  color: #f97316;
+}
+
+.media-arrow {
+  font-size: 1rem;
+  color: #d1d5db;
+}
+
+/* === MAPS APP === */
+
+.maps-page {
+  padding: 0 1rem 2.4rem;
+  color: #111827;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+.maps-header {
+  margin-bottom: 0.8rem;
+}
+
+.maps-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.maps-subtitle {
+  font-size: 0.82rem;
+  color: #6b7280;
+  margin-top: 0.15rem;
+}
+
+.maps-card {
+  background: #ffffff;
+  border-radius: 1.1rem;
+  padding: 0.8rem 0.9rem 1rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.16);
+  border: 1px solid #f3f4f6;
+  margin-bottom: 1rem;
+}
+
+.maps-map-wrapper {
+  position: relative;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  background: #e5e7eb;
+  margin-bottom: 0.6rem;
+}
+
+.maps-map-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+/* Pins on the map */
+
+.maps-pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.6rem;
+}
+
+.maps-pin-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #ef4444;
+  border: 2px solid #f9fafb;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.4);
+  margin-bottom: 0.08rem;
+}
+
+.maps-pin-label {
+  background: rgba(15, 23, 42, 0.85);
+  color: #f9fafb;
+  padding: 0.07rem 0.25rem;
+  border-radius: 999px;
+}
+
+/* Rough positions for Europe on a world map image */
+
+.maps-pin-home      { left: 66%; top: 49%; } /* Varna */
+.maps-pin-barcelona { left: 59%; top: 50%; }
+.maps-pin-amsterdam { left: 60%; top: 43%; }
+.maps-pin-eindhoven { left: 60%; top: 45%; }
+.maps-pin-rotterdam { left: 59%; top: 45%; }
+.maps-pin-hague     { left: 59%; top: 44%; }
+.maps-pin-paris     { left: 58%; top: 47%; }
+.maps-pin-vienna    { left: 66%; top: 46%; }
+.maps-pin-bologna   { left: 63%; top: 49%; }
+.maps-pin-torino    { left: 61%; top: 48%; }
+.maps-pin-milano    { left: 62%; top: 47%; }
+.maps-pin-salerno   { left: 64%; top: 52%; }
+.maps-pin-napoli    { left: 64%; top: 51%; }
+
+.maps-list-title {
+  font-size: 0.86rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.maps-list {
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.maps-list ul {
+  list-style: none;
+  margin: 0.1rem 0 0;
+  padding: 0;
+}
+
+.maps-list li {
+  padding: 0.12rem 0;
+}
 /* Dock */
 
 .dock {
